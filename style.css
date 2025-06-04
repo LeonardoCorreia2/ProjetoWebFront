@@ -101,7 +101,7 @@ footer{
     width: 240px;
     height: auto;
     display: block;
-    margin: 0 auto 40px auto; /* centraliza horizontalmente e dá espaçamento abaixo */
+    margin: 0 auto 40px auto; 
 }
 .bloco-destaqueTrabalhe{
     text-align: center;
@@ -118,5 +118,58 @@ footer{
     line-height: 50px;
     margin-top: 70px;
     margin-bottom: 125px
+}
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .botao {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    main {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .box img {
+        max-height: 120px;
+    }
+
+    .LogoPagina2 {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 60%;
+    }
 }
 
